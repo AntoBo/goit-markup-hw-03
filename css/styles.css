@@ -171,6 +171,10 @@ min-width: 200px;
   padding: 60px 0;
 }
 
+.footer .list{
+  margin-top: 20px;
+}
+
 .footer .link {
   color: var(--text-color-white-transparent);
   font-style: normal;
