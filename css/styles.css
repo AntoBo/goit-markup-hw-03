@@ -69,10 +69,20 @@ body {
 }
 
 /* Site nav */
-
+.header,
+.nav-main,
 .nav.pages,
 .nav.contacts{
   display: flex;
+  align-items: center;
+}
+
+.nav.pages{
+  margin-left: 93px;
+}
+
+.nav.contacts{
+  margin-left: auto;
 }
 
 .nav > .item + .item{
