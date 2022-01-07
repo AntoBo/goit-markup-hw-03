@@ -72,20 +72,20 @@ body {
 .header,
 .nav-main,
 .nav.pages,
-.nav.contacts{
+.nav.contacts {
   display: flex;
   align-items: center;
 }
 
-.nav.pages{
+.nav.pages {
   margin-left: 93px;
 }
 
-.nav.contacts{
+.nav.contacts {
   margin-left: auto;
 }
 
-.nav > .item + .item{
+.nav > .item + .item {
   margin-left: 50px;
 }
 
@@ -98,15 +98,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
 .nav.contacts .link {
   color: var(--text-color-main);
 }
-.nav .link:hover,
-.nav .link:focus {
-  color: var(--color-accent);
-}
 
+.nav .link:hover,
+.nav .link:focus,
 .nav .link.current {
   color: var(--color-accent);
 }
