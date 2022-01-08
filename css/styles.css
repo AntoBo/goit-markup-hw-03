@@ -11,6 +11,7 @@
 
   --bg-color-dark: #2f303a;
   --bg-color-inactive: #f5f4fa;
+  --border-color: #eee;
 }
 
 /* Utilites */
@@ -274,15 +275,42 @@ body {
 }
 
 /* Portfolio */
-.list.filter {
+/* Filter */
+.portfolio .filter {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
+
+.filter .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Cards */
+.portfolio .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards .item {
+  margin-right: 30px;
+  border: 1px solid var(--border-color);
+  /* flex-basis: calc((100%-200px)/4); */
+  flex-basis: 300px;
+}
+/* .cards .item:not(:nth-of-type(3n)) {
+  margin-right: 30px;
+} */
+
+
+
 
 .portfolio-img {
   margin-bottom: 10px;
 }
 .portfolio-title {
   margin-bottom: 4px;
+  margin-left: 24px;
   color: var(--text-color-title);
   font-weight: 700;
   font-size: 18px;
@@ -291,6 +319,8 @@ body {
 }
 
 .portfolio-type {
+  margin-bottom: 20px;
+  margin-left: 24px;
   color: var(--text-color-main);
   font-size: 16px;
   line-height: 1.87;
