@@ -162,6 +162,9 @@ body {
 
 /* Features */
 
+.section.features {
+  padding-bottom: 0;
+}
 .features .list {
   display: flex;
 }
@@ -176,6 +179,9 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   line-height: 1.14;
+}
+.feature-description {
+  width: 270px;
 }
 
 /* Occupation */
@@ -210,8 +216,12 @@ body {
   margin-right: 30px;
 }
 
-.team-member-picture {
+.team-meber-picture {
   margin-bottom: 30px;
+}
+
+.team-member-text {
+  margin: 30px 0;
 }
 
 .team-member-title {
@@ -225,7 +235,7 @@ body {
   line-height: 1.19;
 }
 .team-member-description {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   color: var(--text-color-main);
   font-size: 16px;
   line-height: 1.19;
@@ -315,9 +325,7 @@ body {
 }
 
 .cards-text {
-  width: 370px;
-  max-width: 100%;
-  padding: 20px 0 24px 20px;
+  padding: 20px 24px;
 
   border-right: 1px solid var(--card-border-color);
   border-bottom: 1px solid var(--card-border-color);
@@ -343,12 +351,7 @@ body {
 }
 
 /*todolist
-li дать размер 270
-паддинг под ним 94*2 убрать
 
 сотрудники р2+р в див
 
-портфолио
-карточки мах видс видс убрать
-марджин диву по кругу
 */
