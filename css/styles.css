@@ -30,6 +30,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .link {
@@ -304,8 +305,7 @@ body {
 }
 
 .cards .item {
-  border-bottom: 1px solid var(--card-border-color);
-  width: calc((100% - 2 * 30px) / 3); /*толком не работает. img не хочет масштабироваться*/
+  width: calc((100% - 2 * 30px) / 3);
 }
 .cards .item:not(:nth-of-type(3n)) {
   margin-right: 30px;
@@ -314,13 +314,17 @@ body {
   margin-bottom: 30px;
 }
 
-.portfolio-img {
-  margin-bottom: 20px;
-  width: inherit;
+.cards-text {
+  width: 370px;
+  max-width: 100%;
+  padding: 20px 0 24px 20px;
+
+  border-right: 1px solid var(--card-border-color);
+  border-bottom: 1px solid var(--card-border-color);
+  border-left: 1px solid var(--card-border-color);
 }
 .portfolio-title {
   margin-bottom: 4px;
-  margin-left: 24px;
   color: var(--text-color-title);
   font-weight: 700;
   font-size: 18px;
@@ -329,18 +333,22 @@ body {
 }
 
 .portfolio-type {
-  margin-bottom: 20px;
-  margin-left: 24px;
   color: var(--text-color-main);
   font-size: 16px;
   line-height: 1.87;
 }
 
+.portfolio .link {
+  display: block;
+}
+
 /*todolist
 
-visually huidden
-hero h
-border width!
+-visually huidden
+-hero h
+-border width!
 img resize
 
+
+добавить контейнер в херо
 */
