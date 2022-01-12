@@ -11,7 +11,8 @@
 
   --bg-color-dark: #2f303a;
   --bg-color-inactive: #f5f4fa;
-  --border-color: #eee;
+  --card-border-color: #eee;
+  --header-border-color: #ececec;
 }
 
 /* Utilites */
@@ -40,6 +41,11 @@ img {
 
 /* Globals */
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 body {
   background-color: var(--color-white);
   color: var(--text-color-main);
@@ -54,6 +60,11 @@ body {
   /* outline: 2px dotted red; */
   margin: 0 auto;
   padding: 0 15px;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 /* Logo */
@@ -293,7 +304,7 @@ body {
 }
 
 .cards .item {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--card-border-color);
   width: calc((100% - 2 * 30px) / 3); /*толком не работает. img не хочет масштабироваться*/
 }
 .cards .item:not(:nth-of-type(3n)) {
@@ -324,3 +335,12 @@ body {
   font-size: 16px;
   line-height: 1.87;
 }
+
+/*todolist
+
+visually huidden
+hero h
+border width!
+img resize
+
+*/
